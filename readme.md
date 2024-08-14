@@ -49,5 +49,23 @@
     Xpert Learning Assistant was used to answer detailed questions, and assist in debugging.For more information about the Xpert Learning Assistant, visit [EdX Xpert Learning Assistant](https://www.edx.org/). 
     
 ##References
+Plotly.js Function Reference - Plotly.newPlot
+Plotly.js Reference - Layout.xaxis.autotickangles
+JavaScript Array sort() Method - W3Schools
+D3.js Documentation - DevDocs
+D3.js Selection - d3-selection
+D3.js Selection - d3.select - DevDocs
+D3.js Selection Events - d3-selection
+Standard Events - MDN Web Docs
+D3.js Documentation - DevDocs
+JavaScript this Keyword - W3Schools
+JavaScript Init Function - How It Works - ITSourceCode
+Plotly.js Documentation
+JavaScript Array forEach() Method - W3Schools
+Array.prototype.forEach() - MDN Web Docs
+JavaScript Array Sort Implementation - Stack Overflow
+Array.prototype.sort() - MDN Web Docs
+Array.prototype.slice() - MDN Web Docs
+Array.prototype.forEach() - MDN Web Docs
 
 
