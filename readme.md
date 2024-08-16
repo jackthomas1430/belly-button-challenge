@@ -10,6 +10,7 @@
 - 'static': Directory containing 'app.js'
     -app.js: Contains the JavaScript code for the dashboard
 - 'results': Contains images of the visualizations created for the project
+- https://jackthomas1430.github.io/belly-button-challenge/: Github pages link to view dashboard
 
 ## Technologies Used
 
@@ -22,6 +23,7 @@
 ## Instructions
 1. Clone the repository to your local device using git clone (https://github.com/jackthomas1430/belly-button-challenge.git)
 2. Open the Project: Copy path for 'index.html' and open in your web browser to view dashboard
+3. Use the following link to access the dashboard: https://jackthomas1430.github.io/belly-button-challenge/
 
 ## Usage
 

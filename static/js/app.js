@@ -4,15 +4,13 @@ function buildMetadata(sample) {
     console.log('Metadata Panel:', data);
     // get the metadata field
     let metadata = data.metadata;
-    console.log('Metadata:;',metadata);
-
-    // Filter the metadata for the object with the desired sample number
+  
+  // Filter the metadata for the object with the desired sample number
     let result = metadata.filter(obj => obj.id.toString() === sample)[0];
-    console.log('Sample Number:', result);
+    console.log('Metadata Sample:', sample, result);
 
     // Use d3 to select the panel with id of `#sample-metadata`
     let PANEL = d3.select("#sample-metadata");
-    console.log('Panel:', PANEL);
 
     // Use `.html("") to clear any existing metadata
     PANEL.html("");
@@ -31,17 +29,16 @@ function buildCharts(sample) {
 
     // Get the samples field
     let samples = data.samples;
-    console.log('Sample Field:', samples);
 
     // Filter the samples for the object with the desired sample number
     let result = samples.filter(sampleObj => sampleObj.id === sample)[0];
-    console.log('Sample Number:', result);
+    console.log('Chart Sample Data:', sample, result);
 
     // Get the otu_ids, otu_labels, and sample_values
     let otu_ids = result.otu_ids;
     let otu_labels = result.otu_labels;
     let sample_values = result.sample_values;
-    console.log('id, labels, ids:', otu_ids, otu_labels, sample_values);
+    console.log('ids, labels, values:', otu_ids, otu_labels, sample_values);
 
     // Build a Bubble Chart
     let bubbleData = [{
@@ -55,8 +52,6 @@ function buildCharts(sample) {
         colorscale: 'Earth'
       }
     }];
-
-    console.log('BubbleData:',bubbleData);
 
     let bubbleLayout = {
       title: 'Bacteria Cultures Per Sample',
@@ -72,8 +67,6 @@ function buildCharts(sample) {
     let yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
 
     console.log('yticks', yticks);
-
-    
 
     // Build a Bar Chart
     // Don't forget to slice and reverse the input data appropriately
@@ -117,8 +110,6 @@ function init() {
               .text(name)
               .property("value", name);
     });
-
-    console.log('Names', name);
 
     // Get the first sample from the list
     const firstSample = sampleNames[0];
