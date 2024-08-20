@@ -100,20 +100,21 @@ function init() {
     console.log('Sample Names', sampleNames);
     
     // Use d3 to select the dropdown with id of `#selDataset`
-    let selector = d3.select("#selDataset");
+    let dropdown = d3.select("#selDataset");
+    console.log(dropdown)
 
     // Use the list of sample names to populate the select options
     // Hint: Inside a loop, you will need to use d3 to append a new
     // option for each sample name.
     sampleNames.forEach((name) => {
-      selector.append("option")
+      dropdown.append("option")
               .text(name)
               .property("value", name);
     });
 
     // Get the first sample from the list
     const firstSample = sampleNames[0];
-    console.timeLog('First Sample', firstSample);
+    console.log('First Sample', firstSample);
 
     // Build charts and metadata panel with the first sample
     buildCharts(firstSample);
